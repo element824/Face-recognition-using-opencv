@@ -113,7 +113,7 @@ while True:
         
         if results[1] < 500:
             confidence = int( 100 * (1 - (results[1])/400) )
-            display_string = str(confidence) + '% Confident it is User'
+            display_string = str(confidence) + '% Confident it is a authenticated User'
             
         cv2.putText(image, display_string, (100, 120), cv2.FONT_HERSHEY_COMPLEX, 1, (255,120,150), 2)
         
